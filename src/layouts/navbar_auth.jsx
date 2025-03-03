@@ -1,12 +1,14 @@
-import logo from "../assets/images/logo.png";
-import NavLayoutAuth from "../components/templates/nav_layout_auth";
+import NavLayout from "../components/templates/nav_layout";
 
 function NavAuth() {
     return (
         <>
-            <nav className="bg-custom-white p-4">
-                <NavLayoutAuth />
-            </nav>
+        <nav className="bg-customWhite p-4">
+            <NavLayout
+                children={""}
+                mobileMenuContent={""}
+            />
+        </nav>
         </>
     );
 }

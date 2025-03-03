@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Indonesia",
+        "code": "ID",
+        "dialCode": "+62",
+        "flag": "/images/id.svg"
+    },
+    {
+        "name": "United States",
+        "code": "US",
+        "dialCode": "+1",
+        "flag": "/images/us.svg"
+    },
+    {
+        "name": "Singapore",
+        "code": "SG",
+        "dialCode": "+65",
+        "flag": "/images/sg.svg"
+    }
+]
