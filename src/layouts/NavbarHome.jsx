@@ -1,10 +1,10 @@
-import NavLayout from "../components/templates/nav_layout";
-import HamburgerButton from "../components/atoms/hamburger_btn";
-import NavRightcontent from "../components/molecules/nav_md_content";
-import NavigateMenu from "../components/atoms/nav_menu";
-import ProfileImage from "../components/atoms/profile_image";
+import NavLayout from "../components/templates/NavLayout";
+import Hamburgerbtn from "../components/atoms/Hamburgerbtn";
+import NavRightcontent from "../components/molecules/NavRightContent";
+import NavigateMenu from "../components/atoms/NavigateMenu";
+import ProfileImage from "../components/atoms/ProfileImgae";
 import { useState } from "react";
-import NavSmMenu from "../components/molecules/nav_sm_home";
+import NavMobileMenu from "../components/molecules/NavMobileMenu";
 
 
 function NavbarHome() {
@@ -23,11 +23,11 @@ function NavbarHome() {
                                 <li><NavigateMenu /></li>
                                 <li><ProfileImage /></li>
                             </>} />
-                            <HamburgerButton toggleMenu={toggleMenuFunc} />
+                            <Hamburgerbtn toggleMenu={toggleMenuFunc} />
                         </>
 
                     }
-                    mobileMenuContent={<NavSmMenu children={
+                    mobileMenuContent={<NavMobileMenu children={
                         <>
                             <ul>
                                 <li><NavigateMenu /></li>

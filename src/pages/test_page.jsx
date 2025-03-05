@@ -1,6 +1,6 @@
-import InputPasswordField from "../components/molecules/input_password";
-import PhoneField from "../components/molecules/input_phone_number";
-import InputTextField from "../components/molecules/input_txt";
+import InputPasswordField from "../components/molecules/InputPasswordField";
+import PhoneField from "../components/molecules/PhoneField";
+import InputTextField from "../components/molecules/InputTextField";
 
 
 function TestPage() {

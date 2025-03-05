@@ -1,7 +1,6 @@
 import { useState } from "react";
-import PhoneInput from "react-phone-input-2";
-import InputField from "../atoms/input_field";
-import CountryCode from "../atoms/dropdown_country_code";
+import InputField from "../atoms/InputField";
+import CountryCode from "../atoms/CountryCode";
 
 
 function PhoneField() {

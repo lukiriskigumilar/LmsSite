@@ -1,9 +1,9 @@
 import logo from '../../assets/images/logo.png';
 
-function LogoIcon({className}) {
+function MainIcon({className}) {
     return (  
         <div><img src={logo} className={className} alt="Video belajar icon" /></div>
     );
 }
 
-export default LogoIcon;
+export default MainIcon;

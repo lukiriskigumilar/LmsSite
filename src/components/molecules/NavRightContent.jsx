@@ -1,5 +1,5 @@
-import NavigateMenu from "../atoms/nav_menu";
-import ProfileImage from "../atoms/profile_image";
+import NavigateMenu from "../atoms/NavigateMenu";
+import ProfileImage from "../atoms/ProfileImgae";
 
 function NavRightContent({ children }) {
     return (

@@ -1,5 +1,5 @@
 
-function NavSmMenu({ children,isOpen }) {
+function NavMobileMenu({ children,isOpen }) {
     return (
         <>
             <div id="nav-sm-home" className={`${isOpen ? "flex" : "hidden"} flex-col p-4 space-y-2 bg-customWhite md:hidden`}>
@@ -9,4 +9,4 @@ function NavSmMenu({ children,isOpen }) {
     );
 }
 
-export default NavSmMenu;
+export default NavMobileMenu;
