@@ -1,4 +1,4 @@
-function HamburgerButton({hamburgerButton,toggleMenu}) {
+function Hamburgerbtn({hamburgerButton,toggleMenu}) {
     return ( 
         <button id={hamburgerButton} className="block md:hidden" onClick={toggleMenu}>
         <span className="block w-6 h-0.5 bg-black mb-1"></span>
@@ -8,4 +8,4 @@ function HamburgerButton({hamburgerButton,toggleMenu}) {
     );
 }
 
-export default HamburgerButton;
+export default Hamburgerbtn;

@@ -1,6 +1,6 @@
-import NavLayout from "../components/templates/nav_layout";
+import NavLayout from "../components/templates/NavLayout";
 
-function NavAuth() {
+function NavbarAuth() {
     return (
         <>
         <nav className="bg-customWhite p-4">
@@ -13,4 +13,4 @@ function NavAuth() {
     );
 }
 
-export default NavAuth;
+export default NavbarAuth;

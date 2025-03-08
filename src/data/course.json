@@ -1,0 +1,44 @@
+[
+    {
+        "descCourse": "Belajar dasar-dasar pemasaran digital untuk meningkatkan penjualan.",
+        "tittleCourse": "Pemasaran Digital",
+        "tutorJob": "Digital Marketing Specialist",
+        "tutorName": "John Doe",
+        "workAt": "Tech Corp"
+    },
+    {
+        "descCourse": "Pelajari teknik desain grafis menggunakan Adobe Illustrator.",
+        "tittleCourse": "Desain Grafis",
+        "tutorJob": "Graphic Designer",
+        "tutorName": "Jane Smith",
+        "workAt": "Creative Studio"
+    },
+    {
+        "descCourse": "Tingkatkan keterampilan pengembangan diri dengan teknik mindfulness.",
+        "tittleCourse": "Pengembangan Diri",
+        "tutorJob": "Life Coach",
+        "tutorName": "Emily Johnson",
+        "workAt": "Mindful Living"
+    },
+    {
+        "descCourse": "Pelajari dasar-dasar bisnis untuk memulai usaha Anda sendiri.",
+        "tittleCourse": "Dasar-Dasar Bisnis",
+        "tutorJob": "Business Consultant",
+        "tutorName": "Michael Brown",
+        "workAt": "Business Solutions"
+    },
+    {
+        "descCourse": "Belajar pemrograman web dengan menggunakan JavaScript.",
+        "tittleCourse": "Pemrograman Web",
+        "tutorJob": "Web Developer",
+        "tutorName": "Chris Lee",
+        "workAt": "WebWorks"
+    },
+    {
+        "descCourse": "Pelajari cara membuat aplikasi mobile dengan React Native.",
+        "tittleCourse": "Pengembangan Aplikasi Mobile",
+        "tutorJob": "Mobile Developer",
+        "tutorName": "Sarah Wilson",
+        "workAt": "AppDev"
+    }
+]
