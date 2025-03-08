@@ -10,6 +10,7 @@ import HomePage from "../pages/home";
 function AppRoutes() {
     return (
         <Routes>
+            <Route path="/" element={<LoginPage />} />
             <Route path="home" element={<HomePage />} />
             <Route path="*" element={<PageNotFound />} /> {/* 404 Page */}
             <Route path="testpage" element={<TestPage />} />

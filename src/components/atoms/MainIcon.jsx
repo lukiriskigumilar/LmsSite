@@ -1,8 +1,8 @@
 import logo from '../../assets/images/logo.png';
 
-function MainIcon({className}) {
+function MainIcon({className,icon=logo}) {
     return (  
-        <div><img src={logo} className={className} alt="Video belajar icon" /></div>
+        <div><img src={icon} className={className} alt="Video belajar icon" /></div>
     );
 }
 

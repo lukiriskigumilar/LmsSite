@@ -8,7 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 import AuthBtn from "../../components/molecules/AuthBtn";
 
 
-function RegisterPage({ loginAccountWithGoogle, registerNewAccount }) {
+function RegisterPage({ loginAccountWithGoogle, }) {
     const navigate = useNavigate();
     return (
         <>
@@ -27,7 +27,7 @@ function RegisterPage({ loginAccountWithGoogle, registerNewAccount }) {
                             <Link to="/login" className="font-family-dm-sans text-right block font-[500] text-[16px] mt-[10px] text-gray-main">
                                 Sudah punya akun?
                             </Link>
-                            <GeneralBtn onClickFunc={registerNewAccount} txtBtn="Daftar" className="font-family-dm-sans cursor-pointer bg-green-primary mt-[24px] text-white text-[16px] font-[700] w-full text-center block rounded-full py-[10px]" />
+                            <GeneralBtn onClickFunc={() => navigate("/home")} txtBtn="Daftar" className="font-family-dm-sans cursor-pointer bg-green-primary mt-[24px] text-white text-[16px] font-[700] w-full text-center block rounded-full py-[10px]" />
                         </form>
                         <AuthBtn
                             image_sso={"/images/google.png"}

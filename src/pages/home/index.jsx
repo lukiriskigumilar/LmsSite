@@ -6,6 +6,7 @@ import NavbarHome from "../../layouts/NavbarHome";
 import courses from "../../data/course.json";
 import InputField from "../../components/atoms/InputField";
 import InputTextField from "../../components/molecules/InputTextField";
+import Footer from "../../layouts/footer";
 
 function HomePage() {
     return (
@@ -137,8 +138,11 @@ function HomePage() {
 
                     />
                 </section>
-
+                <footer>
+                    <Footer />
+                </footer>
             </div>
+            
         </>
     );
 }
