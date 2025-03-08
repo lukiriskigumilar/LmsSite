@@ -6,7 +6,7 @@ const Footer = () => {
 
     return (
         <footer className="bg-white">
-            <div className="max-w-full h-fit sm:h-fit sm:max-w-[80%] lg:max-w-[80%] px-5 mx-4 sm:mx-auto pt-4 mt-[60px] mb-[20px] rounded-lg">
+            <div className="max-w-full h-fit sm:h-fit sm:max-w-[80%] lg:max-w-[80%] px-5 mx-4 sm:mx-auto pt-4 mt-[20px] mb-[20px] rounded-lg">
                 <div className="block mt-[5px] mb-6 lg:flex lg:justify-between lg:items-start">
                     <div className="flex flex-col items-start lg:w-[35%]">
                         <MainIcon icon={"/images/mainIcon.png"} />

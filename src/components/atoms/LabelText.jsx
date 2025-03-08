@@ -5,8 +5,4 @@ function LabelText({txtLabel,nameLabel}) {
     );
 }
 
-<<<<<<<< HEAD:src/components/atoms/LabelText.jsx
 export default LabelText;
-========
-export default Label;
->>>>>>>> d13d2542cd8484856ecde0c56bab62bc616309b7:src/components/atoms/Label.jsx
