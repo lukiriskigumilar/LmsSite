@@ -1,7 +1,7 @@
 import { useState } from "react";
 import InputField from "../atoms/InputField";
 import CountryCode from "../atoms/CountryCode";
-import Label from "../atoms/Label";
+import Label from ".../atoms/Label";
 
 
 function PhoneField({ id_input, name_label, typeInput }) {
