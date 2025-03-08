@@ -24,10 +24,10 @@ function RegisterPage({ loginAccountWithGoogle, registerNewAccount }) {
                             <PhoneField id_input={"phone_number"} name_label={"No. Hp"} />
                             <InputPasswordField id={"password"} txtLabel={"Kata Sandi"} />
                             <InputPasswordField id={"password_confirmation"} txtLabel={"Konfirmasi Kata Sandi"} />
-                            <Link to="/login" className="text-right block font-[500] text-[16px] mt-[10px] text-gray-main">
+                            <Link to="/login" className="font-family-dm-sans text-right block font-[500] text-[16px] mt-[10px] text-gray-main">
                                 Sudah punya akun?
                             </Link>
-                            <GeneralBtn onClickFunc={registerNewAccount} txtBtn="Daftar" className=" cursor-pointer bg-green-primary mt-[24px] text-white text-[16px] font-[700] w-full text-center block rounded-full py-[10px]" />
+                            <GeneralBtn onClickFunc={registerNewAccount} txtBtn="Daftar" className="font-family-dm-sans cursor-pointer bg-green-primary mt-[24px] text-white text-[16px] font-[700] w-full text-center block rounded-full py-[10px]" />
                         </form>
                         <AuthBtn
                             image_sso={"/images/google.png"}

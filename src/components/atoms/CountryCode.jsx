@@ -2,21 +2,23 @@ import React, { useState } from 'react';
 import countries from '../../data/countryList.json'
 
 
-function CountryCode() {
+function CountryCode({}) {
     const [selectedCountry, setSelectedCountry] = useState(countries[0]);
     const [isOpen, setIsOpen] = useState(false);
+    // const onSelectedCountry = [selectedCountry.dialCode, selectedCountry.name];
 
     // Fungsi untuk menangani pemilihan negara
     const handleCountrySelect = (country) => {
         setSelectedCountry(country);
-        setIsOpen(false); // Tutup dropdown setelah memilih
+        setIsOpen(false);
+
+        // Tutup dropdown setelah memilih
     };
-    
+
 
     return (
         <>
             <div className="relative inline-block text-left">
-
                 <button
                     type="button"
                     className=" inline-flex justify-left border rounded-md border-gray-300 md:w-[150px] w-[110px] py-0 leading-tight outline-black h-[40px]"
