@@ -22,36 +22,40 @@ const Footer = () => {
                     <div className="block mt-4 lg:mt-0 lg:flex lg:justify-center lg:items-start gap-5">
                         <FooterMenu
                             titleMenu={"Kategori"}
-                            liList={[
-                                <li><a href="#">Digital & Teknologi</a></li>,
-                                <li><a href="#">Pemasaran</a></li>,
-                                <li><a href="#">Manajemen Bisnis</a></li>,
-                                <li><a href="#">Pengembangan Diri</a></li>,
-                                <li><a href="#">Desain</a></li>,
-                            ]
+                            liList={<>
+                            <li><a href="#">Digital & Teknologi</a></li>
+                                <li><a href="#">Pemasaran</a></li>
+                                <li><a href="#">Manajemen Bisnis</a></li>
+                                <li><a href="#">Pengembangan Diri</a></li>
+                                <li><a href="#">Desain</a></li>
+                            </>
+                                
+                            
 
                             }
                         />
 
                         <FooterMenu
                             titleMenu={"Perusahaan"}
-                            liList={[
-                                <li><a href="#">Tentang Kami</a></li>,
-                                <li><a href="#">FAQ</a></li>,
-                                <li><a href="#">Kebijakan Privasi</a></li>,
-                                <li><a href="#">Ketentuan Layanan</a></li>,
+                            liList={<>
+                                <li><a href="#">Tentang Kami</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Kebijakan Privasi</a></li>
+                                <li><a href="#">Ketentuan Layanan</a></li>
                                 <li><a href="#">Bantuan</a></li>
+                            </>
 
-                            ]}
+
+                            }
                         />
 
                         <FooterMenu
                             titleMenu={"Komunitas"}
-                            liList={[
-                                <li><a href="#">Tips Sukses</a></li>,
-                                <li><a href="#">Blog</a></li>,
-
-                            ]}
+                            liList={<>
+                                <li><a href="#">Tips Sukses</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </>
+                            }
                         />
 
 

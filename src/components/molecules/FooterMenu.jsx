@@ -1,7 +1,7 @@
 
-import { useState } from "react";
+import   {useState} from "react";
 
-function FooterMenu({ titleMenu, liList }) {
+function FooterMenu({titleMenu, liList}) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     return (
 
@@ -13,7 +13,7 @@ function FooterMenu({ titleMenu, liList }) {
                         className={`lg:block lg:text-textColorsecond font-normal text-text-secondary transition-all duration-300 overflow-hidden ${isDropdownOpen ? "block" : "hidden"
                             } lg:bloc`}
                     >
-                        {liList}
+                       {liList}
                     </ul>
                 </div>
                 <img
