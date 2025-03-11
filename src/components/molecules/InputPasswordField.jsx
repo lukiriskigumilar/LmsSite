@@ -3,11 +3,7 @@ import { useState } from "react";
 import EyeRegular from "../../assets/images/eye-regular.svg"
 import EyeSlash from "../../assets/images/eye-slash-solid.svg"
 import InputField from "../atoms/InputField";
-<<<<<<< HEAD
 import Label from "../atoms/LabelText";
-=======
-import LabelText from "../atoms/LabelText";
->>>>>>> 6080dbbcde74830691dc9dd6a28bf068f4f582b4
 
 function InputPasswordField({ id, txtLabel, value, handleChange, placeholder, }) {
     const [showPassword, setShowPassword] = useState(false);
