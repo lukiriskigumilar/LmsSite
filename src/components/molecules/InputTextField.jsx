@@ -1,5 +1,5 @@
 import InputField from "../atoms/InputField";
-import Label from "../atoms/Label";
+import Label from "../atoms/LabelText";
 
 function InputTextField({  id, txtLabel, value, type = "text", handleChange, placeholder,style="mt-[10px]"}) {
     return (

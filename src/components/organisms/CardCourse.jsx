@@ -12,7 +12,7 @@ function CardCourse({ tittleCourse, descCourse, tutorJob, tutorName, workAt, car
                 <div>
 
                     <h3 className="font-bold text-[17px] 
-                            lg:mt-4 lg:text-[20px]">{tittleCourse}</h3>
+                            lg:mt-4 lg:text-[20px] line-clamp-2">{tittleCourse}</h3>
                     <p className="hidden lg:mt-[10px] lg:line-clamp-2 text-text-secondary text-[15px] font-light font-family-dm-sans">
                         {descCourse}
                     </p>
