@@ -1,12 +1,52 @@
-# React + Vite
+# Learning Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository showcases my work in building clean and responsive user interfaces (UI) using React. It primarily focuses on projects completed for bootcamp assignments at Harisenin.com.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live demo of the project [here](https://lms-app.lukiriski.my.id/).
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To get a local copy up and running, follow these simple steps:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/your-username/your-repo-name.git
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd your-repo-name
+    ```
+
+3. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+4. **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+    The application will be available at `http://localhost:3000`.
+
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A fast build tool and development server for modern web projects.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **React Router**: A library for routing in React applications.
+- **Vercel**: A platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.
+
+## About
+
+This project is a part of my bootcamp assignments at Harisenin.com. It demonstrates my ability to create responsive and user-friendly interfaces using modern web development technologies.
+
+Feel free to explore the code and provide feedback. Contributions are welcome!
+

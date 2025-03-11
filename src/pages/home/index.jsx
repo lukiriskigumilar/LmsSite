@@ -66,20 +66,47 @@ function HomePage() {
                         }
                         cardCourse={
                             <>
-                                <div className="block lg:flex lg:flex-wrap gap-4 justify-start mt-1 mb-[20px] lg:gap-2">
-                                    {courses.map((course, index) => (
-                                        <CardCourse
-                                            key={index}
-                                            descCourse={course.descCourse}
-                                            tittleCourse={course.tittleCourse}
-                                            tutorJob={course.tutorJob}
-                                            tutorName={course.tutorName}
-                                            workAt={course.workAt}
-                                        //Todo: uncomment this code below to show the image card and tutor image if data is available
-                                        // cardImage={course.cardImage}
-                                        // tutorImage={course.tutorImage}
-                                        />
-                                    ))}
+                                <div className="block lg:flex lg:flex-wrap gap-4 justify-start place-items-baseline mt-1 mb-[20px] lg:gap-2">
+                                    <CardCourse
+                                        descCourse={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."}
+                                        tittleCourse={"Belajar Desain Grafis untuk Pemula"}
+                                        tutorJob={"UI/UX Designer"}
+                                        tutorName={"rachel"}
+                                        workAt={"Google"}
+                                        rating={4.5}
+                                        totalReview={200}
+                                        price={200}
+                                    />
+                                    <CardCourse
+                                        descCourse={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."}
+                                        tittleCourse={"Belajar Desain Grafis untuk Pemula "}
+                                        tutorJob={"front-end Developer"}
+                                        tutorName={"Nicole"}
+                                        workAt={"Google"}
+                                        rating={2.5}
+                                        totalReview={200}
+                                        price={200}
+                                    />
+                                    <CardCourse
+                                        descCourse={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."}
+                                        tittleCourse={"Belajar backend Developer"}
+                                        tutorJob={"back-end Developer"}
+                                        tutorName={"Amanda"}
+                                        workAt={"Meta"}
+                                        rating={4.5}
+                                        totalReview={200}
+                                        price={200}
+                                    />
+                                    <CardCourse
+                                        descCourse={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."}
+                                        tittleCourse={"Belajar frontend Developer"}
+                                        tutorJob={"front-end Developer"}
+                                        tutorName={"rachel"}
+                                        workAt={"Google"}
+                                        rating={2.5}
+                                        totalReview={200}
+                                        price={200} />
+
                                 </div>
                             </>
                         }
@@ -90,7 +117,7 @@ function HomePage() {
                         imageBanner={"/images/ctabanner.png"}
                         textContent={
                             <>
-                                <div className="block mt-[10px] ">
+                                <div className="block mt-[2px] ">
                                     <h2
                                         className="text-[12px] mb-[5px] sm:mb-0 font-light text-center px-[55px] lg:leading-[45px] lg:text-[20px] lg:px-[220px] lg:text-center lg:font-light">
                                         NEWSLETTER
@@ -142,7 +169,7 @@ function HomePage() {
                     <Footer />
                 </footer>
             </div>
-            
+
         </>
     );
 }

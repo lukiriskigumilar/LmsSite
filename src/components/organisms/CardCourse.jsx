@@ -4,7 +4,7 @@ import Price from "../atoms/Price";
 import Rating from "../atoms/rating";
 import TutorProfile from "../molecules/TutorProfile";
 
-function CardCourse({ tittleCourse, descCourse, tutorJob, tutorName, workAt, cardImage, tutorImage }) {
+function CardCourse({ tittleCourse, descCourse, tutorJob, tutorName, workAt, cardImage, tutorImage, rating, totalReview, price }) {
     return (
         <CardContainer>
             <div className="flex gap-5 lg:block whitespace-normal">
@@ -23,8 +23,8 @@ function CardCourse({ tittleCourse, descCourse, tutorJob, tutorName, workAt, car
                 </div>
             </div>
             <div className="flex justify-between mt-3 place-items-center px-2">
-            <Rating rating={4.5} totalReview={100} />
-            <Price price={"200"} />
+            <Rating rating={rating} totalReview={totalReview} />
+            <Price price={price} />
             </div>
             <div>
 

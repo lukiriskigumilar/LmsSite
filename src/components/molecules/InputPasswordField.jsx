@@ -3,7 +3,11 @@ import { useState } from "react";
 import EyeRegular from "../../assets/images/eye-regular.svg"
 import EyeSlash from "../../assets/images/eye-slash-solid.svg"
 import InputField from "../atoms/InputField";
+<<<<<<< HEAD
 import Label from "../atoms/LabelText";
+=======
+import LabelText from "../atoms/LabelText";
+>>>>>>> 6080dbbcde74830691dc9dd6a28bf068f4f582b4
 
 function InputPasswordField({ id, txtLabel, value, handleChange, placeholder, }) {
     const [showPassword, setShowPassword] = useState(false);
@@ -14,7 +18,7 @@ function InputPasswordField({ id, txtLabel, value, handleChange, placeholder, })
     return (
         <>
             <div className="mt-[10px]">
-                <Label nameLabel={id} txtLabel={txtLabel} />
+                <LabelText nameLabel={id} txtLabel={txtLabel}  />
                 <div className="relative">
                     <InputField autoComplete={"username"} inputId={id} typeInput={showPassword ? "text" : "password"} name={id} value={value} handleChange={handleChange} placeholder={placeholder} />
                     <button type="button" onClick={showPasswordFunc}
