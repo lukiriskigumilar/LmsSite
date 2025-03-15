@@ -11,6 +11,7 @@ import Footer from "../../layouts/footer";
 function HomePage() {
     return (
         <>
+            <title>Home Page</title>
             <NavbarHome />
             <div className="bg-background-primary   flex flex-col
              ">
@@ -66,6 +67,10 @@ function HomePage() {
                         }
                         cardCourse={
                             <>
+                                {/* 
+          TODO: Use useState to store course data if it comes from an API.
+          If the data comes from a static JSON file, useState is not needed.
+        */}
                                 <div className="block lg:flex lg:flex-wrap gap-4 justify-start mt-1 mb-[20px] lg:gap-2">
                                     {courses.map((course, index) => (
                                         <CardCourse
@@ -74,8 +79,8 @@ function HomePage() {
                                             tittleCourse={course.tittleCourse}
                                             tutorJob={course.tutorJob}
                                             tutorName={course.tutorName}
-                                            workAt={course.workAt} 
-                                            price={Math.floor(course.Price /1000)}
+                                            workAt={course.workAt}
+                                            price={Math.floor(course.Price / 1000)}
                                             rating={course.rating}
                                             totalReview={course.reviewTotal}
                                         //Todo: uncomment this code below to show the image card and tutor image if data is available
@@ -145,7 +150,7 @@ function HomePage() {
                     <Footer />
                 </footer>
             </div>
-            
+
         </>
     );
 }

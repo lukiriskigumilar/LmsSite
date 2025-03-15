@@ -7,7 +7,7 @@ import Label from "../atoms/LabelText";
 function PhoneField({ id_input, name_label, typeInput,onSelectCountry, onchange }) {
 
     return (
-        <>r
+        <>
             <div className="mt-[10px]">
 
 
