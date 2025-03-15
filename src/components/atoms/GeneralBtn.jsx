@@ -1,7 +1,7 @@
-function GeneralBtn({className, txtBtn, onClickFunc}) {
+function GeneralBtn({className, txtBtn, onClickFunc, type}) {
     return ( 
-        <button onClick={onClickFunc}
-            className={className}>{txtBtn}</button>
+        <button onClick={onClickFunc} type={type}
+            className={className}>{txtBtn} </button>
     );
 }
 

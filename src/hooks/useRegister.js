@@ -54,7 +54,7 @@ export default function useRegister(){
         };
         const updatedUsers = [...existingUsers, newUser];
         localStorage.setItem("user_data", JSON.stringify(updatedUsers));
-        ToasSuccses("Akunmu sudah siap digunakan. Yuk, login dulu biar makin seru")
+        ToasSuccses("Akunmu sudah siap digunakan. Yuk, login dulu")
         navigate("/login");
     };
     return{
