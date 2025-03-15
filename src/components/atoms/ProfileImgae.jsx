@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
 import defaultProfileImage from "../../assets/images/Avatar.png"
-function ProfileImage({profileImage}) {
+function ProfileImage({profileImage, linkTo, className}) {
     return (
-        <a href="{TODO:navigate to profile page}"><img src={profileImage? profileImage: defaultProfileImage} alt="" /></a>
+       <Link to={linkTo}>
+      <img src={profileImage? profileImage: defaultProfileImage} alt="" className={className || "cursor-pointer  w-[44px] h-[44px]"} />
+       </Link>
     );
 }
 

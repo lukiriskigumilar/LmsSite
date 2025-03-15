@@ -6,7 +6,7 @@ function InputTextField({  id, txtLabel, value, type = "text", handleChange, pla
     return (
         <>   <div className={style}>
             <LabelText nameLabel={id} txtLabel={txtLabel} />
-            <InputField inputId={id} typeInput={type} value={value} name={id} handleChange={handleChange} placeholder={placeholder} />
+            <InputField  inputId={id} typeInput={type} value={value} name={id} handleChange={handleChange} placeholder={placeholder} />
         </div>
         </>
     );

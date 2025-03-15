@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import countries from '../../data/countryList.json'
 
 
-function CountryCode({}) {
+function CountryCode({onSelectCountry}) {
     const [selectedCountry, setSelectedCountry] = useState(countries[0]);
     const [isOpen, setIsOpen] = useState(false);
     // const onSelectedCountry = [selectedCountry.dialCode, selectedCountry.name];
@@ -11,6 +11,9 @@ function CountryCode({}) {
     const handleCountrySelect = (country) => {
         setSelectedCountry(country);
         setIsOpen(false);
+        if (onSelectCountry) {
+            onSelectCountry(country.dialCode); 
+        }
 
         // Tutup dropdown setelah memilih
     };
