@@ -37,9 +37,15 @@ export default function useAuth() {
         }
 
     };
+
+    const handleLogout=() => {
+        localStorage.removeItem("currentUser");
+        window.location.href("/login")
+    }
     return{
         loginForm,
         handleChange, 
-        loginFunc
+        loginFunc, 
+        handleLogout
     }
 }

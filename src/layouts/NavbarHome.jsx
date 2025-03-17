@@ -6,6 +6,7 @@ import ProfileImage from "../components/atoms/ProfileImgae";
 import { useState } from "react";
 import NavMobileMenu from "../components/molecules/NavMobileMenu";
 import { Link } from "react-router-dom";
+import ProfileMenu from "../components/molecules/ProfileDropdown";
 
 function NavbarHome() {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,8 @@ function NavbarHome() {
                         <>
                             <NavRightcontent children={<>
                                 <li><NavigateMenu /></li>
-                                <li><ProfileImage linkTo="/profile" /></li>
+                            <ProfileMenu />
+                                
                             </>} />
                             <Hamburgerbtn toggleMenu={toggleMenuFunc} />
                         </>
@@ -31,7 +33,7 @@ function NavbarHome() {
                         <>
                             <ul className="flex flex-col space-y-2">
                                 <li><NavigateMenu /></li>
-                                <li><ProfileImage linkTo="/Profile" /></li>
+                                <ProfileMenu />
                             </ul>
                         </>}
                         isOpen={isOpen}
