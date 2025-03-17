@@ -1,4 +1,4 @@
-import SidebarItem from "../atoms/SidebarITem";
+import SidebarItem from "../atoms/SidebarItem";
 import SvgProfileIcon from "../atoms/SvgProfileIcon";
 import SvgBookIcon from "../atoms/SvgBookIcon";
 import SvgBasket from "../atoms/SvgBasket";
