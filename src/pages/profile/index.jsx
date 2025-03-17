@@ -1,6 +1,6 @@
 import { act, useState } from "react";
 
-import SidebarItem from "../../components/atoms/SidebarITem";
+import SidebarItem from "../../components/atoms/SidebarItem";
 import SideMenu from "../../components/molecules/SideMenu";
 import Footer from "../../layouts/footer";
 import NavbarHome from "../../layouts/NavbarHome";
