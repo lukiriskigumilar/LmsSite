@@ -4,41 +4,60 @@
         "tittleCourse": "Pemasaran Digital",
         "tutorJob": "Digital Marketing Specialist",
         "tutorName": "John Doe",
-        "workAt": "Tech Corp"
+        "workAt": "Tech Corp",
+        "Price": 200000,
+        "rating":4.5,
+        "reviewTotal": 110
     },
     {
         "descCourse": "Pelajari teknik desain grafis menggunakan Adobe Illustrator.",
         "tittleCourse": "Desain Grafis",
         "tutorJob": "Graphic Designer",
         "tutorName": "Jane Smith",
-        "workAt": "Creative Studio"
+        "workAt": "Creative Studio",
+        "Price": 200000,
+        "rating": 1.5,
+        "reviewTotal": 231
     },
     {
         "descCourse": "Tingkatkan keterampilan pengembangan diri dengan teknik mindfulness.",
         "tittleCourse": "Pengembangan Diri",
         "tutorJob": "Life Coach",
         "tutorName": "Emily Johnson",
-        "workAt": "Mindful Living"
+        "workAt": "Mindful Living", 
+        "Price": 200000,
+        "rating": 4.5,
+        "reviewTotal": 112
     },
     {
         "descCourse": "Pelajari dasar-dasar bisnis untuk memulai usaha Anda sendiri.",
         "tittleCourse": "Dasar-Dasar Bisnis",
         "tutorJob": "Business Consultant",
         "tutorName": "Michael Brown",
-        "workAt": "Business Solutions"
+        "workAt": "Business Solutions", 
+        "Price": 200000,
+        "rating": 4.5,
+        "reviewTotal": 110
     },
     {
         "descCourse": "Belajar pemrograman web dengan menggunakan JavaScript.",
         "tittleCourse": "Pemrograman Web",
         "tutorJob": "Web Developer",
         "tutorName": "Chris Lee",
-        "workAt": "WebWorks"
+        "workAt": "WebWorks", 
+        "Price": 200000,
+        "rating": 2.5,
+        "reviewTotal": 100
+
     },
     {
-        "descCourse": "Pelajari cara membuat aplikasi mobile dengan React Native.",
-        "tittleCourse": "Pengembangan Aplikasi Mobile",
-        "tutorJob": "Mobile Developer",
-        "tutorName": "Sarah Wilson",
-        "workAt": "AppDev"
+        "descCourse": "Pelajari cara membuat aplikasi mobile dengan React Native dan backend menggunkan Firebase.",
+        "tittleCourse": "Pengembangan Aplikasi Mobile Dengan React Native Dan FIrebase",
+        "tutorJob": "Mobile Developer and Backend Developer",
+        "tutorName": "Sarah Wilson jane ortega Lee Brown",
+        "workAt": "AppDev Studio", 
+         "Price": 200000,
+        "rating": 4.5,
+        "reviewTotal": 100
     }
 ]

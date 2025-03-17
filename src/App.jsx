@@ -1,4 +1,5 @@
 import { BrowserRouter } from 'react-router'
+import { ToastContainer } from 'react-toastify'
 import AppRoutes from './routes/routes'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
 
     <BrowserRouter>
+      <ToastContainer />
       <AppRoutes />
     </BrowserRouter>
 

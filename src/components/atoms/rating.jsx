@@ -10,9 +10,9 @@ function Rating({ rating, totalReview }) {
         }
     return (
         <>
-            <div className="font-family-dm-sans flex items-center justfy-center gap-2 lg:mt-1">
+            <div className="font-family-dm-sans flex place-items-baseline  justfy-center gap-2 lg:mt-1">
                 <div className="flex gap-1">{stars}</div>
-                <p className=" text-text-secondary mt-2 lg:text-[13px] font-[500px]  underline underline-offset-4 font-family-dm-sans ">{rating} ({totalReview})</p>
+                <p className=" text-text-secondary mt-2 lg:text-[13px] text-[12px] font-[500px]  underline underline-offset-4 font-family-dm-sans ">{rating} ({totalReview})</p>
             </div>
         </>
     );

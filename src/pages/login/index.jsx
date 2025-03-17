@@ -11,24 +11,24 @@ import { useNavigate } from "react-router";
 
 function LoginPage() {
     const navigate = useNavigate();
-    const [loginFunc, loginWithGoogle,] = useAuth();
+    const {handleChange,loginForm,loginFunc} = useAuth();
     return (
         <>
             <title>Login Page</title>
             <NavbarAuth />
             <section>
                 <AuthLayout tittle="Masuk ke Akun" description="Yuk, lanjutin belajarmu di videobelajar">
-                    <form action="">
-                        <InputTextField id="email" txtLabel="Email" />
-                        <InputPasswordField id="password" txtLabel="Password" />
+                    <form onSubmit={loginFunc}>
+                        <InputTextField id="email" txtLabel="Email" handleChange={handleChange} />
+                        <InputPasswordField id="password" txtLabel="Password" handleChange={handleChange} />
                         <a href="#" className=" font-family-dm-sans text-right block font-[500] text-[16px] mt-[10px] text-gray-main">
                             Lupa Password?
                         </a>
-                        <GeneralBtn onClickFunc={loginFunc} txtBtn="Masuk" className="cursor-pointer font-family-dm-sans  bg-green-primary mt-[24px] text-white text-[16px] font-[700] w-full text-center block rounded-full py-[10px]" />
+                        <GeneralBtn type="Submit" txtBtn="Masuk" className="cursor-pointer font-family-dm-sans  bg-green-primary mt-[24px] text-white text-[16px] font-[700] w-full text-center block rounded-full py-[10px]" />
                     </form>
                     <AuthBtn
                         image_sso={GoogleImage}
-                        onclickSsoFunc={loginWithGoogle}
+                        onclickSsoFunc={()=> alert("belum tersedia")}
                         txt_sso="Masuk dengan Google"
                         text_btn="Daftar"
                         onclickBtnFunc={() => navigate("/register")}

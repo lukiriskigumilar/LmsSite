@@ -4,7 +4,7 @@ import CountryCode from "../atoms/CountryCode";
 import Label from "../atoms/LabelText";
 
 
-function PhoneField({ id_input, name_label, typeInput }) {
+function PhoneField({ id_input, name_label, typeInput,onSelectCountry, onchange }) {
 
     return (
         <>
@@ -13,8 +13,8 @@ function PhoneField({ id_input, name_label, typeInput }) {
 
                 <Label nameLabel={id_input} txtLabel={name_label} />
                 <div className="inline-flex items-end gap-2 w-full ">
-                    <CountryCode />
-                    <InputField inputId={id_input} name={id_input} typeInput={typeInput} />
+                    <CountryCode onSelectCountry={onSelectCountry} />
+                    <InputField inputId={id_input} name={id_input} typeInput={typeInput} handleChange={onchange}/>
 
                 </div>
             </div> </>

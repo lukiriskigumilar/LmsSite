@@ -11,20 +11,20 @@ function CardCourse({ tittleCourse, descCourse, tutorJob, tutorName, workAt, car
                 <CardImage imagesCard={cardImage} />
                 <div>
 
-                    <h3 className="font-bold text-[17px] 
-                            lg:mt-4 lg:text-[20px] line-clamp-2">{tittleCourse}</h3>
+                    <h3 className="font-bold text-[16px] mt-[-3px]
+                            lg:mt-4 lg:text-[20px] line-clamp-2 font-family-poppins">{tittleCourse}</h3>
                     <p className="hidden lg:mt-[10px] lg:line-clamp-2 text-text-secondary text-[15px] font-light font-family-dm-sans">
                         {descCourse}
                     </p>
-            
+
                     <TutorProfile tutorJob={tutorJob}
                         tutorName={tutorName} workAt={workAt} tutorImage={tutorImage}
                     />
                 </div>
             </div>
             <div className="flex justify-between mt-3 place-items-center px-2">
-            <Rating rating={rating} totalReview={totalReview} />
-            <Price price={price} />
+                <Rating rating={rating} totalReview={totalReview} />
+                <Price price={price} />
             </div>
             <div>
 
