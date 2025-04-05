@@ -1,7 +1,7 @@
-import SidebarItem from "../atoms/SidebarITem";
 import SvgProfileIcon from "../atoms/SvgProfileIcon";
 import SvgBookIcon from "../atoms/SvgBookIcon";
 import SvgBasket from "../atoms/SvgBasket";
+import SidebarItem from "../molecules/Sidebaritem";
 
 function SideMenu({ activeMenu, tittleMenu, descMenu, onclickCourse, onclickOrder, onclickProfile }) {
     return (
