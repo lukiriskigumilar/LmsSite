@@ -1,13 +1,12 @@
 import { Navigate, Outlet } from "react-router-dom";
+import Cookies from "js-cookie";
+import { useAuthStore } from "../hooks/authStore";
 
-function RequireAuth() {
-    const currentUser = localStorage.getItem("currentUser");
+export default function RequireAuth() {
+    const user = useAuthStore((state) => state.user);
+    const jwt = Cookies.get("Auth");
 
-    if (currentUser) {
-        return <Outlet />;
-    } else {
-        return <Navigate to="/login" replace />;
-    }
+    const isAuthorized = user && jwt && user.JWT === jwt;
+
+    return isAuthorized ? <Outlet /> : <Navigate to="/login" replace />;
 }
-
-export default RequireAuth;

@@ -1,13 +1,14 @@
 import { Outlet, Navigate } from "react-router";
-function RedirectIfAuthenticated() {
-    
-    const currentUser = localStorage.getItem("currentUser");
+import Cookies from "js-cookie";
+import { useAuthStore } from "../hooks/authStore";
 
-    if (currentUser) {
-        return <Navigate to="/" replace />;
-    } else {
-        return <Outlet />;
-    }
+function RedirectIfAuthenticated() {
+    const user = useAuthStore((state) => state.user);
+    const jwt = Cookies.get("Auth");
+
+    const isAuthorized = user && jwt && user.JWT === jwt;
+
+    return isAuthorized ? <Navigate to="/" replace /> : <Outlet />;
 }
 
 export default RedirectIfAuthenticated;

@@ -10,7 +10,7 @@ export default function useRegister(){
     const [dialCode, setDialCode] = useState("+62");
     
     const [formData, setFormData] = useState({
-        id: Math.floor(Math.random() * Date.now()), // Gunakan uuid untuk ID yang lebih unik
+        custom_id: Math.floor(Math.random() * Date.now()), // Gunakan uuid untuk ID yang lebih unik
         full_name: "",
         email: "",
         phone_number: "",
@@ -35,7 +35,7 @@ export default function useRegister(){
 
     // Fungsi untuk menangani input form
     const handleChange = (e) => {
-        const jwt = `${formData.id}${formData.email}`
+        const jwt = `${formData.custom_id}${formData.email}`
         const { id, value } = e.target;
         setFormData((prevData) => ({
             ...prevData,
