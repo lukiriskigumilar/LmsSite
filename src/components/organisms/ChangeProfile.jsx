@@ -4,12 +4,12 @@ import GeneralBtn from "../atoms/GeneralBtn";
 import ProfileImage from "../atoms/ProfileImgae";
 import FloatingLabel from "../molecules/FloatingLabel";
 import countries from '../../data/countryList.json'
-import useGetUser from "../../hooks/useGetUser";
 import useUpdateUser from "../../hooks/useUpdateUser";
+import { useAuthStore } from "../../hooks/authStore";
 
 function ChangeProfile({ nameValue, emailValue, phoneValue }) {
-    const { currentUser } = useGetUser();
     const { changeProfile, handleChange, } = useUpdateUser();
+    const currentUser = useAuthStore((state) => state.user);
 
     if (!currentUser || Object.keys(currentUser).length === 0) {
         return <p>Loading....</p>
@@ -22,8 +22,8 @@ function ChangeProfile({ nameValue, emailValue, phoneValue }) {
                     <div className="flex flex-row gap-3 items-center">
                         <ProfileImage className={"w-[80px] h-[80px] rounded-sm"} />
                         <div className="flex flex-col">
-                            <p className="font-semibold text-[16px] font-family-poppins text-black">{currentUser.full_name}</p>
-                            <p className="font-normal text-[16px] font-family-dm-sans text-neutral-800">{currentUser.email}</p>
+                            <p className="font-semibold text-[16px] font-family-poppins text-black">{currentUser?.full_name ?? 'none of data'}</p>
+                            <p className="font-normal text-[16px] font-family-dm-sans text-neutral-800">{currentUser?.email ?? 'none of data'}</p>
                             <p className="font-bold text-orange-primary text-[14px] font-family-dm-sans">Change image</p>
                         </div>
                     </div>
