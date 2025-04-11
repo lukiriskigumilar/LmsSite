@@ -32,3 +32,23 @@ export const updateUser = async (userId, userData) => {
         throw error;
     }
 }
+
+export const deleteUser = async (userId) =>  {
+    try {
+        const response = await axios.delete(`${BASE_URL}/users/${userId}`);
+        return response.data;
+    } catch (error) {
+        console.error("Error deleting user:", error);
+        throw error;
+    }
+}
+
+export const getCourses = async () => {
+    try {
+        const response = await axios.get(`${BASE_URL}/courses`);
+        return response.data;
+    } catch (error) {
+        console.error("Error fetching users:", error);
+        throw error;
+    }
+}
