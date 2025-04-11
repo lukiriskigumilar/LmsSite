@@ -1,7 +1,7 @@
 import SvgProfileIcon from "../atoms/SvgProfileIcon";
 import SvgBookIcon from "../atoms/SvgBookIcon";
 import SvgBasket from "../atoms/SvgBasket";
-import SidebarItem from "../atoms/Sidebaritem";
+import SidebarItem from "../atoms/SidebarItem";
 import SvgSettings from "../atoms/SvgSettings";
 
 function SideMenu({ activeMenu, tittleMenu, descMenu, onclickCourse, onclickOrder, onclickProfile, onclickSettings }) {
