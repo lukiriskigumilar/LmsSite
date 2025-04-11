@@ -1,14 +1,49 @@
+import { useState,useEffect } from "react";
+
 import GeneralBtn from "../../components/atoms/GeneralBtn";
 import Banner from "../../components/molecules/banner";
 import CardCourse from "../../components/organisms/CardCourse";
 import ListCourseLayout from "../../components/templates/ListCourseLayout";
 import NavbarHome from "../../layouts/NavbarHome";
-import courses from "../../data/course.json";
 import InputField from "../../components/atoms/InputField";
 import InputTextField from "../../components/molecules/InputTextField";
 import Footer from "../../layouts/footer";
+import { toast } from "react-toastify";
+
+
+import { getCourses } from "../../services/useService";
 
 function HomePage() {
+    const [courses, setCourses] = useState([])
+
+    useEffect(() => {
+    
+        const fetchCourses = async () => {
+            const toastId = toast.loading("Fetching data", {
+                autoClose: false,
+                position: "top-center",
+                isLoading: true,
+                
+            })
+            try {
+                
+                const data = await getCourses()
+                toast.dismiss(toastId);
+                setCourses(data) 
+            } catch (err) {
+                toast.update(toastId, {
+                    render: err.message,
+                    position: "top-center",
+                    type: "error",
+                    isLoading: false,
+                    autoClose: 3000,
+            })
+            }
+        }
+
+        fetchCourses()
+    }, [])
+    console.log(courses)
     return (
         <>
             <title>Home Page</title>
@@ -72,22 +107,23 @@ function HomePage() {
           If the data comes from a static JSON file, useState is not needed.
         */}
                                 <div className="block lg:flex lg:flex-wrap gap-4 justify-start mt-1 mb-[20px] lg:gap-2">
-                                    {courses.map((course, index) => (
-                                        <CardCourse
-                                            key={index}
-                                            descCourse={course.descCourse}
-                                            tittleCourse={course.tittleCourse}
-                                            tutorJob={course.tutorJob}
-                                            tutorName={course.tutorName}
-                                            workAt={course.workAt}
-                                            price={Math.floor(course.Price / 1000)}
-                                            rating={course.rating}
-                                            totalReview={course.reviewTotal}
-                                        //Todo: uncomment this code below to show the image card and tutor image if data is available
-                                        // cardImage={course.cardImage}
-                                        // tutorImage={course.tutorImage}
-                                        />
-                                    ))}
+                                    {
+                                        courses.map((course, index) => (
+                                            <CardCourse
+                                                key={index}
+                                                descCourse={course.descCourse}
+                                                tittleCourse={course.titleCourse}
+                                                tutorJob={course.tutorJob}
+                                                tutorName={course.tutorName}
+                                                workAt={course.workAt}
+                                                price={Math.floor(course.price / 1000)}
+                                                rating={course.rating}
+                                                totalReview={course.reviewTotal}
+                                            //Todo: uncomment this code below to show the image card and tutor image if data is available
+                                             cardImage={course.cardImage}
+                                             tutorImage={course.tutorImage}
+                                            />
+                                        ))}
                                 </div>
                             </>
                         }

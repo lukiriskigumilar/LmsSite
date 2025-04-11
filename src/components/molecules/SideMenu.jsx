@@ -1,9 +1,12 @@
-import SidebarItem from "../atoms/SidebarItem";
+
+import SidebarItem from "../atoms/Sidebaritem";
 import SvgProfileIcon from "../atoms/SvgProfileIcon";
 import SvgBookIcon from "../atoms/SvgBookIcon";
 import SvgBasket from "../atoms/SvgBasket";
+import SidebarItem from "../atoms/Sidebaritem";
+import SvgSettings from "../atoms/SvgSettings";
 
-function SideMenu({ activeMenu, tittleMenu, descMenu, onclickCourse, onclickOrder, onclickProfile }) {
+function SideMenu({ activeMenu, tittleMenu, descMenu, onclickCourse, onclickOrder, onclickProfile, onclickSettings }) {
     return (
         <>
             <div className="flex flex-col gap-2 h-fit w-[311px]">
@@ -17,14 +20,14 @@ function SideMenu({ activeMenu, tittleMenu, descMenu, onclickCourse, onclickOrde
                     <div className="flex flex-col items-start gap-3 ">
                         <SidebarItem
                             isActive={activeMenu == "profile"}
-                            itemName={"Profile saya"}
+                            itemName={"Profile Saya"}
                             svgIcon={
                                 <SvgProfileIcon className={activeMenu == "profile" ? "fill-yellow-button" : "fill-gray-secondary"} />
                             }
                             onclick={onclickProfile} />
                         <SidebarItem
                             isActive={activeMenu == "course"}
-                            itemName={"Kelas saya"}
+                            itemName={"Kelas Saya"}
                             svgIcon={
                                 <SvgBookIcon className={activeMenu == "course" ? "fill-yellow-button" : "fill-gray-secondary"} />
                             }
@@ -36,6 +39,13 @@ function SideMenu({ activeMenu, tittleMenu, descMenu, onclickCourse, onclickOrde
                                 <SvgBasket className={activeMenu == "order" ? "fill-yellow-button" : "fill-gray-secondary"} />
                             }
                             onclick={onclickOrder} />
+                        <SidebarItem
+                            isActive={activeMenu == "settings"}
+                            itemName={"Pengaturan"}
+                            svgIcon={
+                                <SvgSettings className={activeMenu == "settings" ? "fill-yellow-button" : "fill-gray-secondary"} />
+                            }
+                            onclick={onclickSettings} />
 
                     </div>
                 </div>
